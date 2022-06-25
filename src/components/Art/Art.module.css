@@ -1,8 +1,9 @@
 .container {
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
 }
 
 .canvas {
-  border: 1px solid orangered;
+  min-width: 400px;
+  min-height: 300px;
 }

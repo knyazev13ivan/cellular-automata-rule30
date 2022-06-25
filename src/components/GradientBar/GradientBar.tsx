@@ -22,7 +22,7 @@ const GradientBar: React.FC = () => {
 
   useEffect(() => {
     dispatch(run());
-  }, [points]);
+  }, [points, dispatch]);
 
   const animation: IAnimation = {
     isRun: isRun,
