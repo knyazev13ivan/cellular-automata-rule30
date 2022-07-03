@@ -1,7 +1,6 @@
-import { TMatrix2D } from "../initMatrixs";
 
 const updateConway = (
-  mtx: TMatrix2D,
+  mtx: number[][][],
   toggle: number,
   lastRowOfRule30: Array<number>
 ) => {

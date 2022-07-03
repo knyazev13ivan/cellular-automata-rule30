@@ -1,6 +1,30 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { IPointProps, IPointsState } from '../../Types'
 
+// const initialState: IPointsState = {
+//   points: [
+//     {
+//       id: ':r0:',
+//       color: '#181818',
+//       position: 0,
+//     },
+//     {
+//       id: ':r1:',
+//       color: '#5a00ff',
+//       position: 100,
+//     },
+//     {
+//       id: ':r2:',
+//       color: '#3232ff',
+//       position: 270,
+//     },
+//     {
+//       id: ':r3:',
+//       color: '#9bc8ff',
+//       position: 480,
+//     },
+//   ]
+// }
 const initialState: IPointsState = {
   points: [
     {

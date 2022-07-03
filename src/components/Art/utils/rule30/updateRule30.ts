@@ -1,4 +1,4 @@
-const updateRule30 = (mtx: Array<Array<number>>) => {
+const updateRule30 = (mtx: number[][]) => {
   mtx.shift();
 
   const newRow = new Array(mtx[0].length).fill(0);
