@@ -1,13 +1,13 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import colorReduser from "../components/Art/colorSlice";
-import gradientBarReduser from "../components/GradientBar/gradientBarSlice";
-import pointsReduser from "../components/GradientBar/Point/pointsSlice";
+import colorsReducer from "../components/Art/colorsSlice";
+import gradientBarReducer from "../components/GradientBar/gradientBarSlice";
+import pointsReducer from "../components/GradientBar/Point/pointsSlice";
 
 export const store = configureStore({
   reducer: {
-    colors: colorReduser,
-    gradient: gradientBarReduser,
-    points: pointsReduser,
+    colors: colorsReducer,
+    gradient: gradientBarReducer,
+    points: pointsReducer,
   },
 });
 

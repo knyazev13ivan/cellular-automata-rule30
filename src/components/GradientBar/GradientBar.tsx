@@ -4,8 +4,8 @@ import Canvas from "./Canvas";
 import Point from "./Point/Point";
 import { IAnimation } from "../Types";
 import { run, stop } from "./gradientBarSlice";
-import { setColorsArr } from "../Art/colorSlice";
 import styles from "./GradientBar.module.css";
+import { setColorsArr } from "../Art/colorsSlice";
 
 const GradientBar: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -63,9 +63,9 @@ const GradientBar: React.FC = () => {
         const rgb = ctx.getImageData(xPos, 5, 1, 1).data.slice(0, 3);
         currentColors.push(`rgb(${rgb.join(", ")})`);
       }
-
-      dispatch(setColorsArr(currentColors));
-
+      
+      dispatch(setColorsArr(currentColors))
+      
       setTimeout(() => dispatch(stop()), 0);
     },
   };

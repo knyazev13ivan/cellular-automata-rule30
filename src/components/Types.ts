@@ -19,18 +19,6 @@ export interface IAnimationParams {
   deltaTime: number
 }
 
-export interface ICircle {
-  posX: number,
-  posY: number,
-  radius: number,
-  waveSize: number,
-  numberOfWaves: number,
-  startAngle: number,
-  offsetAngle: number,
-  width: number,
-  color: string
-}
-
 export interface IRgb {
   r: number,
   g: number,
@@ -53,5 +41,3 @@ export interface IColors {
   colors:Array<string>,
   size: number
 }
-
-export type FlameMatrix = [Array<Array<number>>, Array<Array<number>>]
